@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Button } from "./ui/button";
 import { Card } from "./ui/card";
 import { 
@@ -12,6 +12,17 @@ import {
 } from "lucide-react";
 
 const LinkInBioPage = () => {
+  // Load Instagram embed script
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.async = true;
+    script.src = '//www.instagram.com/embed.js';
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
   const contactLinks = [
     {
       name: "Ver Portfolio no Instagram",
