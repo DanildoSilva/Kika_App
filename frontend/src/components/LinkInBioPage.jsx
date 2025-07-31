@@ -99,7 +99,7 @@ const LinkInBioPage = () => {
         </div>
 
         {/* Contact Links */}
-        <div className="space-y-4 animate-slide-up">
+        <div className="space-y-4 animate-slide-up mb-8">
           {contactLinks.map((link, index) => {
             const IconComponent = link.icon;
             return (
@@ -133,6 +133,43 @@ const LinkInBioPage = () => {
               </Card>
             );
           })}
+        </div>
+
+        {/* Instagram Feed */}
+        <div className="mb-8 animate-fade-in-delayed">
+          <h2 className="text-2xl font-bold text-gray-900 text-center mb-6 font-display">
+            Últimos Trabalhos
+          </h2>
+          
+          <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-pink-100">
+            <div className="text-center">
+              <Instagram className="w-12 h-12 text-pink-500 mx-auto mb-4" />
+              <p className="text-gray-600 mb-4">
+                Veja nossos trabalhos mais recentes no Instagram
+              </p>
+              
+              {/* Instagram Embed Widget */}
+              <div className="instagram-embed-container">
+                <iframe 
+                  src="https://snapwidget.com/embed/1077287" 
+                  className="snapwidget-widget w-full h-96 border-0 overflow-hidden rounded-xl"
+                  scrolling="no" 
+                  allowtransparency="true"
+                  title="Instagram Feed"
+                ></iframe>
+              </div>
+              
+              <div className="mt-4">
+                <Button
+                  onClick={() => handleContactClick("https://instagram.com/fortes_kika")}
+                  className="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:scale-105"
+                >
+                  <Instagram className="w-5 h-5 mr-2" />
+                  Ver Mais no Instagram
+                </Button>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Footer */}
