@@ -76,31 +76,25 @@ const LinkInBioPage = () => {
               <img 
                 src="https://customer-assets.emergentagent.com/job_034b8ba9-5b44-431d-ba74-5ff38378c871/artifacts/46tuszry_logo_light_9-16.png"
                 alt="Kika Fortes Logo"
-                className="w-32 h-32 object-contain drop-shadow-lg animate-scale-in"
+                className="w-48 h-48 object-contain drop-shadow-lg animate-scale-in"
               />
               <div className="absolute -top-2 -right-2">
-                <Sparkles className="w-6 h-6 text-pink-500 animate-bounce" />
+                <Sparkles className="w-8 h-8 text-pink-500 animate-bounce" />
               </div>
             </div>
           </div>
           
-          <h1 className="text-3xl font-bold text-gray-900 mb-2 font-display">
+          <h1 className="text-4xl font-bold text-gray-900 mb-6 font-display">
             Kika Fortes
           </h1>
           
-          <p className="text-lg text-purple-600 font-medium mb-4 font-display">
-            BELEZA EM CADA DETALHE
+          <p className="text-gray-700 leading-relaxed text-base mb-4 px-4">
+            Especialista em estética e cuidados com a pele. Oferecemos tratamentos personalizados para realçar sua beleza natural com técnicas modernas e produtos de qualidade premium.
           </p>
           
-          <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-pink-100">
-            <p className="text-gray-700 leading-relaxed text-sm">
-              Especialista em estética e cuidados com a pele. Oferecemos tratamentos personalizados para realçar sua beleza natural com técnicas modernas e produtos de qualidade premium.
-            </p>
-            
-            <div className="flex items-center justify-center mt-3 text-pink-600">
-              <MapPin className="w-4 h-4 mr-1" />
-              <span className="text-sm font-medium">Cabo Verde</span>
-            </div>
+          <div className="flex items-center justify-center mb-6 text-pink-600">
+            <MapPin className="w-5 h-5 mr-2" />
+            <span className="text-base font-medium">Cabo Verde</span>
           </div>
         </div>
 
